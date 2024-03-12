@@ -11,8 +11,12 @@ while True:
         b=input("Enter number 2: ")
         res=eval(a+l[ch-1]+b)
 
-    except:
-        print("Invalid numbers or choice!\n")
+    except IndexError:
+        print("Invalid choice!\n")
+        pass
+
+    except TypeError:
+        print("Invalid numbers!\n")
         pass
 
     else:
